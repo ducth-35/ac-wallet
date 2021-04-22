@@ -1,0 +1,15 @@
+import * as React from 'react';
+import Svg, {Path} from 'react-native-svg';
+
+function SvgBanSolid(props) {
+  return (
+    <Svg width={32} height={32} viewBox="0 0 32 32" fill="none" {...props}>
+      <Path
+        d="M16 3C8.832 3 3 8.832 3 16s5.832 13 13 13 13-5.832 13-13S23.168 3 16 3zm0 2c6.086 0 11 4.914 11 11 0 2.727-.988 5.207-2.625 7.125L9.031 7.469A10.95 10.95 0 0116 5zM7.625 8.875l15.344 15.656A10.95 10.95 0 0116 27C9.914 27 5 22.086 5 16c0-2.727.988-5.207 2.625-7.125z"
+        fill={props.fill}
+      />
+    </Svg>
+  );
+}
+
+export default SvgBanSolid;
